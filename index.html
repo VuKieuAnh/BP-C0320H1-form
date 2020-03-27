@@ -5,16 +5,24 @@
     <title>Form lấy dữ liệu</title>
 </head>
 <body>
-<form>
-    <label for="name">Nhập nội dung cần tìm kiếm</label>
-    <input id="name" type="text"/>
-    <button type="submit">Tìm kiếm</button>
-</form>
+<!--<form>-->
+    <label for="name">Nhập tên</label>
+    <input id="name" type="text"/><br>
+    <label for="sex">Giới tính</label>
+    <select id="sex">
+        <option value="1">Nam</option>
+        <option value="2">Nữ</option>
+        <option value="3">Khác</option>
+    </select><br>
+    <label for="age">Tuổi</label>
+    <input id="age" type="text"/><br>
+    <button type="submit" onclick="laydulieu()">Tìm kiếm</button>
+<!--</form>-->
 
 <script>
-    alert("Xin chào Đỗ Thế Hiệp?");
-    prompt("Mời bạn nhập tên");
-    console.log("C0320H1");
+function laydulieu() {
+    alert(document.getElementById("sex").value);
+}
 </script>
 </body>
 </html>
