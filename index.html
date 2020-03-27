@@ -14,14 +14,17 @@
         <option value="2">Nữ</option>
         <option value="3">Khác</option>
     </select><br>
-    <label for="age">Tuổi</label>
-    <input id="age" type="text"/><br>
+    <label >Tuổi</label>
+    <input type="radio" name="old" value="<18"><18<br/>
+    <input type="radio" name="old" value="18">18<br/>
+    <input type="radio" name="old" value=">18">>18<br/>
+<!--    <input id="age" type="text"/><br>-->
     <button type="submit" onclick="laydulieu()">Tìm kiếm</button>
 <!--</form>-->
 
 <script>
 function laydulieu() {
-    alert(document.getElementById("sex").value);
+    alert(document.querySelector("input[name='old']:checked").value);
 }
 </script>
 </body>
