@@ -13,7 +13,7 @@
     <label for="name">Nhập tên</label>
     <input id="name" onchange="laydulieu()" type="text"/><br>
     <label for="sex">Giới tính</label>
-    <select id="sex">
+    <select name="sex" id="sex">
         <option value="1">Nam</option>
         <option value="2">Nữ</option>
         <option value="3">Khác</option>
@@ -26,6 +26,8 @@
 <script>
 function laydulieu() {
     alert(document.querySelector("input[name='old']:checked").value);
+    alert(document.getElementById("name").value);
+    alert(document.getElementsByName("sex").value);
 }
 </script>
 </body>
