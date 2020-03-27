@@ -6,18 +6,19 @@
 </head>
 <body>
 <!--<form>-->
+<label >Tuổi</label>
+<input type="radio" name="old" value="<18"><18<br/>
+<input type="radio" name="old" value="18">18<br/>
+<input type="radio" name="old" value=">18">>18<br/>
     <label for="name">Nhập tên</label>
-    <input id="name" type="text"/><br>
+    <input id="name" onchange="laydulieu()" type="text"/><br>
     <label for="sex">Giới tính</label>
     <select id="sex">
         <option value="1">Nam</option>
         <option value="2">Nữ</option>
         <option value="3">Khác</option>
     </select><br>
-    <label >Tuổi</label>
-    <input type="radio" name="old" value="<18"><18<br/>
-    <input type="radio" name="old" value="18">18<br/>
-    <input type="radio" name="old" value=">18">>18<br/>
+
 <!--    <input id="age" type="text"/><br>-->
     <button type="submit" onclick="laydulieu()">Tìm kiếm</button>
 <!--</form>-->
